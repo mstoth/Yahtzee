@@ -107,8 +107,8 @@ class Yahtzee():
 
     def roll(self):
         if len(self.chosen) == 0:
-            for v in self.chosen:
-                self.cup_of_dice[v].active = True
+            for d in self.cup_of_dice:
+                d.active = True
             rolled_dice = [self.d1.roll(), self.d2.roll(), self.d3.roll(), self.d4.roll(), self.d5.roll()]
             return rolled_dice
         else:
