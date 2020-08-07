@@ -24,7 +24,7 @@ class Yahtzee():
     def scores(self, numbers):
         d = {}
         sum = reduce(lambda a,b:a+b,numbers)
-        if self.choose('Yahtzee', numbers):
+        if numbers.count(numbers[0]) == 5
             d["Yahtzee"] = 50
         else:
             d["Yahtzee"] = 0
